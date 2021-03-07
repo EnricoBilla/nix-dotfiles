@@ -2,7 +2,7 @@
 let
   username = builtins.getEnv "USER";
   homedir = builtins.getEnv "HOME";
-  secrets = import ./secrets.nix;
+  secrets = import ../secrets.nix;
 in
 {
   programs.home-manager = {
