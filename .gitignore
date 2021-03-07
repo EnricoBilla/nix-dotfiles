@@ -1,1 +1,2 @@
-secrets.nix
+nixos/nixos-secrets.nix
+nixpkgs/hm-secrets.nix
