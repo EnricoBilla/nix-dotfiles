@@ -54,9 +54,8 @@ in
 
   services.xserver = {
     enable = true;
-    layout = "us";
-    xkbVariant = "altgr-intl";
-    xkbOptions = "eurosign:e";
+    layout = "it";
+    xkbVariant = "us";
     videoDrivers = [ "nvidia" ];
     displayManager = {
       sddm.enable = true;

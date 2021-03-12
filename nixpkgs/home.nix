@@ -22,6 +22,6 @@ in
 
   home.username = username;
   home.homeDirectory = homedir;
-  
+
   home.stateVersion = "21.03";
 }

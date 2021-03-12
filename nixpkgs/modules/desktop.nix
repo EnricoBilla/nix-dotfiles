@@ -19,6 +19,7 @@
     audacity
     olive-editor
     obs-studio
+    vlc
     kdeconnect
     breeze-icons
     gnome-breeze
