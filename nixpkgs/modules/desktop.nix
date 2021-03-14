@@ -17,6 +17,7 @@
     deluge
     peek
     audacity
+    gimp
     olive-editor
     obs-studio
     vlc

@@ -9,7 +9,11 @@
     asciinema
     jq
     wget
+    gcc
+    gnumake
+    cmake
     jetbrains.idea-ultimate
+    jetbrains.clion
     jetbrains.pycharm-professional
     jetbrains.webstorm
     openjdk11
