@@ -10,6 +10,7 @@ in
     path = "https://github.com/nix-community/home-manager/archive/release-20.09.tar.gz";
   };
 
+
   imports = [
     ./modules/utils.nix
     ./modules/desktop.nix
@@ -17,6 +18,7 @@ in
     ./modules/university.nix
     ./modules/gpg.nix
     (import ./modules/git.nix { secrets = secrets; })
+    ./modules/konsole.nix
     ./modules/zsh.nix
   ];
 
