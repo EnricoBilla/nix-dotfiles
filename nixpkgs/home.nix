@@ -18,6 +18,7 @@ in
     ./modules/university.nix
     ./modules/gpg.nix
     (import ./modules/git.nix { secrets = secrets; })
+    ./modules/alacritty.nix
     ./modules/konsole.nix
     ./modules/zsh.nix
   ];

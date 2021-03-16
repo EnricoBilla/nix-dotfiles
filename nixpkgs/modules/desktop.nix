@@ -54,7 +54,8 @@
 
   xresources = {
     properties = {
-      "Xft.dpi" = "110";
+      "Xft.dpi" = "96";
+      "Xft.rgba" = "rgb";
     };
   };
 

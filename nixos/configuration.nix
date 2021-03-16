@@ -54,20 +54,27 @@ in
 
   services.xserver = {
     enable = true;
+
+    #keyboard
     layout = "it";
     xkbVariant = "us";
+
     videoDrivers = [ "nvidia" ];
+
     displayManager = {
       sddm.enable = true;
       sddm.theme = "sugar-candy"; # sugar-candy
       defaultSession = "i3";
             
     };
+
     desktopManager.gnome3.enable = true;
-    #windowManager.i3 = {
-    #  enable = true;
-    #  package = "pkgs.i3-gaps";
-    #};
+
+    windowManager.i3 = {
+      enable = true;
+      package = pkgs.i3-gaps;
+    };
+
   };
 
   services.printing.enable = true;

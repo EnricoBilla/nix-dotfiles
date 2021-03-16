@@ -2,7 +2,9 @@
 
 {
   home.packages = with pkgs; [
+    telnet
     patchelf
+    bc
     htop
     gotop
     ffmpeg
