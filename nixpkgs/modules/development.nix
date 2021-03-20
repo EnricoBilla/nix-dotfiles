@@ -17,6 +17,8 @@
     jetbrains.pycharm-professional
     jetbrains.webstorm
     openjdk11
+    python
+    python3
   ];
 
   programs.vscode.enable = true;

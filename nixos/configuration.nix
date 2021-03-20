@@ -21,7 +21,7 @@ in
     nameservers = [ secrets.pihole.ip "8.8.8.8" ];
 
     # for kde connect
-    firewall.allowedTCPPortRanges = [ { from = 1714; to = 1764; } ];
+    firewall.allowedTCPPortRanges = [ { from = 1714; to = 1764; } { from =42069; to=42069; } ];
     firewall.allowedUDPPortRanges = [ { from = 1714; to = 1764; } ];
 
     networkmanager = {

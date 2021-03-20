@@ -12,6 +12,7 @@
     pavucontrol
     dnsutils
     exa
+    sl
     bat
     fd
     jetbrains-mono
