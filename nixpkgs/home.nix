@@ -13,11 +13,11 @@ in
 
   imports = [
     ./modules/utils.nix
-    ./modules/desktop.nix
+    (import ./modules/desktop.nix { inherit homedir pkgs; })
     ./modules/development.nix
     ./modules/university.nix
     ./modules/gpg.nix
-    (import ./modules/git.nix { secrets = secrets; })
+    (import ./modules/git.nix { inherit secrets; })
     ./modules/konsole.nix
     ./modules/zsh.nix
   ];

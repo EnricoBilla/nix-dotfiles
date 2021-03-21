@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }:
+{ homedir, pkgs, ... }:
 
 {
   home.packages = with pkgs; [
@@ -44,7 +44,21 @@
         name = "Roboto 11";
     };
 
-    gtk3.extraConfig.gtk-cursor-theme-name = "breeze";
+    gtk3 = {
+      bookmarks = [
+        "file://${homedir}/Projects"
+      ];
+
+      extraConfig.gtk-cursor-theme-name = "breeze";
+
+      # remove dashed line
+      extraCss = ''
+        scrolledwindow undershoot.top,
+        scrolledwindow undershoot.right,
+        scrolledwindow undershoot.bottom,
+        scrolledwindow undershoot.left { background-image: none; }
+      '';
+    };
 
   };
 
