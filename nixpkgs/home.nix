@@ -22,6 +22,8 @@ in
     ./modules/zsh.nix
   ];
 
+  nixpkgs.overlays = [ (import ./overlays/discord.nix) ];
+
   home.username = username;
   home.homeDirectory = homedir;
 
