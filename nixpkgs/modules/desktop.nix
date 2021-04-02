@@ -79,6 +79,7 @@
     extensions = [ 
       "cjpalhdlnbpafiamejdnhcphjbkeiagm" # ublock origin
       "nngceckbapebfimnlniiiahkandclblb" # bitwarden
+      "mnjggcdmjocbbbhaepdhchncahnbgone" # sponsorblock
     ];
   };
 

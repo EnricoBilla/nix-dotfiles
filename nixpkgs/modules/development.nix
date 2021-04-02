@@ -2,6 +2,7 @@
 
 {
   home.packages = with pkgs; [
+    cloc
     nodejs
     yarn
     httpie
