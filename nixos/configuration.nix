@@ -59,7 +59,7 @@ in
     layout = "it";
     xkbVariant = "us";
 
-    videoDrivers = [ "nvidia" ];
+    videoDrivers = [ "nouveau" ];
 
     displayManager = {
       sddm.enable = true;
@@ -75,6 +75,20 @@ in
       package = pkgs.i3-gaps;
     };
 
+  };
+
+  programs.sway = {
+    enable = true;
+    wrapperFeatures.gtk = true; # so that gtk works properly
+    extraPackages = with pkgs; [
+      swaylock
+      swayidle
+      wl-clipboard
+      xwayland
+      mako # notification daemon
+      dmenu
+      rofi # Dmenu is the default in the config but i recommend wofi since its wayland native
+    ];
   };
 
   services.printing.enable = true;
@@ -97,6 +111,8 @@ in
   ];
 
   environment.pathsToLink = [ "/share/zsh" ];
+
+  environment.variables._JAVA_AWT_WM_NONREPARENTING = "1";
 
   programs.gnupg.agent.enable = true;
   virtualisation.docker.enable = true;

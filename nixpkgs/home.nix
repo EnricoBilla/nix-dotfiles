@@ -19,6 +19,7 @@ in
     ./modules/gpg.nix
     (import ./modules/git.nix { inherit secrets; })
     ./modules/konsole.nix
+    ./modules/sway.nix
     ./modules/zsh.nix
   ];
 
